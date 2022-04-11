@@ -11,9 +11,11 @@
     <header>
         <div class="bg-dark text-white p-2">
             <span class="navbar-brand ml-2">Bowling League</span>
+            <a asp-area="" asp-controller="Bowlers" asp-action="Index">Bolwer CRUD</a>
         </div>
         <div class="row m-1 p-1">
-            <div id="team" class="col-3">
+            <div id="team" class="col-3 btn btn-group-toggle">
+                
                 <vc:teams />
             </div>
             <div class="col-9">

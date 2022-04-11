@@ -22,13 +22,19 @@ namespace Mission13.Models
         public string BowlerPhoneNumber { get; set; }
         
 
-
-        [Display(Name = "Team")]
-        public int TeamID { get; set; }
-
         [ForeignKey("TeamID")]
         public virtual Team Teams { get; set; }
-        
+
+
+
+        [Display(Name = "Contact Name")]
+        public string ContactName
+        {
+            get
+            {
+                return BowlerFirstName + ", " + BowlerLastName;
+            }
+        }
 
     }
 }

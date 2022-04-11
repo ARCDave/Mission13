@@ -7,23 +7,25 @@
 
 <h1>Bowlers</h1>
 
-@foreach (Bowler b in Model.Bowlers)
-{
-<tr>
 
-    <td>@b.BowlerFirstName</td>
-    <td>@b.BowlerMiddleInit</td>
-    <td>@b.BowlerLastName</td>
-    <td>@b.BowlerAddress</td>
-    <td>@b.BowlerCity</td>
-    <td>@b.BowlerState</td>
-    <td>@b.BowlerZip</td>
-    <td>@b.BowlerPhoneNumber</td>
+
+            @foreach (Bowler b in Model.Bowlers)
+            {
+            <tr>
+
+                <td>@b.BowlerFirstName</td>
+                <td>@b.BowlerMiddleInit</td>
+                <td>@b.BowlerLastName</td>
+                <td>@b.BowlerAddress</td>
+                <td>@b.BowlerCity</td>
+                <td>@b.BowlerState</td>
+                <td>@b.BowlerZip</td>
+                <td>@b.BowlerPhoneNumber</td>
     
 
-</tr>
-    <br />
-}
+            </tr>
+                <br />
+            }
 @*<div page-nation="@Model.b" page-action="Index" page-classes-enabled="true"
          page-class="btn" page-class-normal="btn-outline-dark"
          page-class-selected="btn-primary" class="btn-group pull-right m-1">
